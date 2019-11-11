@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.min.js"></script>
+    <title>D3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<div style="padding: 0;">
+  <header class="style-guide__header">
+    <img class="style-guide__header__logo" src="header-logo.svg" alt="Timescale">
+    <span>The Inner Workings of TimescaleDB</span>
+  </header>
+</div>
+<div>
+  <body>
+    <script>
+    const w = 400, h = 250;
+    const padding = 4;
+    const data = [50,100,150,200,250,130,210,30,170];
+
+    let svg = d3.select('body')
+              .append('svg')
+              .attr('width', w)
+              .attr('height', h);
+
+    svg.selectAll('rect')
+    .data(data)
+    .enter()
+      .append('rect')
+      .attrs({
+        x: (d, i) => i * (w / data.length),
+        y: d => h - d,
+        width: w / data.length - padding,
+        height: d => d,
+        fill: 'green'
+    });
+
+    svg.selectAll('text')
+    .data(data)
+    .enter()
+      .append('text')
+      .text((d) => d)
+      .attrs({
+        x: (d,i) => i * (w / data.length) + (w / data.length - padding) / 2,
+        y: (d) => h - d + 20
+    });
+    </script>
+  </body>
+</div>
+</html>

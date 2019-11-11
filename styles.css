@@ -1,0 +1,31 @@
+.style-guide__header {
+    font-family: IBM Plex Mono,monospace;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #141e35;
+    letter-spacing: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background: #fdb515;
+    padding: 32px;
+}
+
+.style-guide__main {
+    background: #fcfcfc;
+    min-height: calc(100vh - 120px);
+    width: 100%;
+    flex: 1 1;
+    padding: 32px;
+}
+
+.style-guide__header__logo {
+    max-width: 250px;
+}
+
+html, body {
+margin:0;
+padding:0;
+}
