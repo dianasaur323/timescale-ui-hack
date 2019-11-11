@@ -1,0 +1,11 @@
+/Users/dianasaur/Projects/timescale-ui-hack/timescale-api/target/debug/deps/socket2-c3e903478fc35916.rmeta: /Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/socket2-0.3.11/src/lib.rs /Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/socket2-0.3.11/src/sockaddr.rs /Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/socket2-0.3.11/src/socket.rs /Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/socket2-0.3.11/src/utils.rs /Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/socket2-0.3.11/src/sys/unix.rs
+
+/Users/dianasaur/Projects/timescale-ui-hack/timescale-api/target/debug/deps/libsocket2-c3e903478fc35916.rlib: /Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/socket2-0.3.11/src/lib.rs /Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/socket2-0.3.11/src/sockaddr.rs /Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/socket2-0.3.11/src/socket.rs /Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/socket2-0.3.11/src/utils.rs /Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/socket2-0.3.11/src/sys/unix.rs
+
+/Users/dianasaur/Projects/timescale-ui-hack/timescale-api/target/debug/deps/socket2-c3e903478fc35916.d: /Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/socket2-0.3.11/src/lib.rs /Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/socket2-0.3.11/src/sockaddr.rs /Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/socket2-0.3.11/src/socket.rs /Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/socket2-0.3.11/src/utils.rs /Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/socket2-0.3.11/src/sys/unix.rs
+
+/Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/socket2-0.3.11/src/lib.rs:
+/Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/socket2-0.3.11/src/sockaddr.rs:
+/Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/socket2-0.3.11/src/socket.rs:
+/Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/socket2-0.3.11/src/utils.rs:
+/Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/socket2-0.3.11/src/sys/unix.rs:

@@ -1,0 +1,11 @@
+/Users/dianasaur/Projects/timescale-ui-hack/timescale-api/target/debug/deps/generic_array-b0b2df26d3b03cf4.rmeta: /Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/generic-array-0.9.0/src/lib.rs /Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/generic-array-0.9.0/src/hex.rs /Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/generic-array-0.9.0/src/impls.rs /Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/generic-array-0.9.0/src/arr.rs /Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/generic-array-0.9.0/src/iter.rs
+
+/Users/dianasaur/Projects/timescale-ui-hack/timescale-api/target/debug/deps/libgeneric_array-b0b2df26d3b03cf4.rlib: /Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/generic-array-0.9.0/src/lib.rs /Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/generic-array-0.9.0/src/hex.rs /Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/generic-array-0.9.0/src/impls.rs /Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/generic-array-0.9.0/src/arr.rs /Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/generic-array-0.9.0/src/iter.rs
+
+/Users/dianasaur/Projects/timescale-ui-hack/timescale-api/target/debug/deps/generic_array-b0b2df26d3b03cf4.d: /Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/generic-array-0.9.0/src/lib.rs /Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/generic-array-0.9.0/src/hex.rs /Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/generic-array-0.9.0/src/impls.rs /Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/generic-array-0.9.0/src/arr.rs /Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/generic-array-0.9.0/src/iter.rs
+
+/Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/generic-array-0.9.0/src/lib.rs:
+/Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/generic-array-0.9.0/src/hex.rs:
+/Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/generic-array-0.9.0/src/impls.rs:
+/Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/generic-array-0.9.0/src/arr.rs:
+/Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/generic-array-0.9.0/src/iter.rs:

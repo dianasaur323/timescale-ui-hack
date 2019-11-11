@@ -1,0 +1,2 @@
+cargo:rustc-env=TYPENUM_BUILD_OP=/Users/dianasaur/Projects/timescale-ui-hack/timescale-api/target/debug/build/typenum-89b015a4c73788c1/out/consts.rs
+cargo:rustc-env=TYPENUM_BUILD_CONSTS=/Users/dianasaur/Projects/timescale-ui-hack/timescale-api/target/debug/build/typenum-89b015a4c73788c1/out/op.rs

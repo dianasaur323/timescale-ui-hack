@@ -8,3 +8,9 @@ edition = "2018"
 
 [dependencies]
 rocket = "0.4.2"
+postgres = "0.15.2"
+
+[dependencies.rocket_contrib]
+version = "0.4.2"
+default-features = false
+features = ["diesel_postgres_pool"]

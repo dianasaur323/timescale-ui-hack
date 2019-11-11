@@ -1,0 +1,1 @@
+{"rustc":7340672482149159210,"features":"[\"default\"]","target":2853601631441890360,"profile":9935990280773120926,"path":8310152601677637432,"deps":[[12778549334746520238,"semver_parser",false,12701257442277470035]],"local":[{"CheckDepInfo":{"dep_info":"debug/.fingerprint/semver-84e24ceb4e5aca61/dep-lib-semver-84e24ceb4e5aca61"}}],"rustflags":[],"metadata":8762386052474907708}

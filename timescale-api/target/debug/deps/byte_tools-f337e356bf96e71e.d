@@ -1,0 +1,11 @@
+/Users/dianasaur/Projects/timescale-ui-hack/timescale-api/target/debug/deps/byte_tools-f337e356bf96e71e.rmeta: /Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/byte-tools-0.2.0/src/lib.rs /Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/byte-tools-0.2.0/src/read_single.rs /Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/byte-tools-0.2.0/src/write_single.rs /Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/byte-tools-0.2.0/src/read_slice.rs /Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/byte-tools-0.2.0/src/write_slice.rs
+
+/Users/dianasaur/Projects/timescale-ui-hack/timescale-api/target/debug/deps/libbyte_tools-f337e356bf96e71e.rlib: /Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/byte-tools-0.2.0/src/lib.rs /Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/byte-tools-0.2.0/src/read_single.rs /Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/byte-tools-0.2.0/src/write_single.rs /Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/byte-tools-0.2.0/src/read_slice.rs /Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/byte-tools-0.2.0/src/write_slice.rs
+
+/Users/dianasaur/Projects/timescale-ui-hack/timescale-api/target/debug/deps/byte_tools-f337e356bf96e71e.d: /Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/byte-tools-0.2.0/src/lib.rs /Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/byte-tools-0.2.0/src/read_single.rs /Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/byte-tools-0.2.0/src/write_single.rs /Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/byte-tools-0.2.0/src/read_slice.rs /Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/byte-tools-0.2.0/src/write_slice.rs
+
+/Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/byte-tools-0.2.0/src/lib.rs:
+/Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/byte-tools-0.2.0/src/read_single.rs:
+/Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/byte-tools-0.2.0/src/write_single.rs:
+/Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/byte-tools-0.2.0/src/read_slice.rs:
+/Users/dianasaur/.cargo/registry/src/github.com-1ecc6299db9ec823/byte-tools-0.2.0/src/write_slice.rs:
