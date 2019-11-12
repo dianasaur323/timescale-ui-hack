@@ -1,9 +1,10 @@
 #![feature(proc_macro_hygiene, decl_macro)]
 
 #[macro_use] extern crate rocket;
-// #[macro_use] extern crate postgres;
+extern crate dotenv;
+extern crate postgres;
 
-// use postgres::{Connection, TlsMode};
+use postgres::{Connection, TlsMode};
 use std::env;
 // #[macro_use] extern crate rocket_contrib;
 
@@ -30,21 +31,31 @@ fn index() -> &'static str {
 // }
 
 fn main() {
-    // let db_url = env::var(DATABASE_URL)
-    // let db_url = match env::var("DATABASE_URL") {
-    //     Some(val) => val.into_string().unwrap(),
-    //     None => panic!("DATABASE_URL is not defined in the environment")
-    // };
+    // Pull in defined database url from .env file
+    dotenv::dotenv().expect("Failed to read .env file");
     let key = "DATABASE_URL";
-    match env::var(key) {
-            Ok(val) => println!("{}: {}", key, val),
-            Err(e) => println!("Couldn't print env var {}: {}", key, e),
+    let db_url = match env::var(key) {
+            Ok(val) => val,
+            Err(_e) => panic!("DATABASE_URL is not defined in the environment"),
+    };
+
+    let conn = Connection::connect(db_url, TlsMode::None)
+            .unwrap();
+
+    let table_query = "select * from information_schema.tables where table_schema
+        not in ('pg_catalog','_timescaledb_catalog','_timescaledb_config','_timescaledb_internal',
+        '_timescaledb_cache','information_schema','timescaledb_information');";
+    let mut tables:Vec<(String, String)> = Vec::new();
+    for row in &conn.query(table_query, &[]).unwrap() {
+        tables.push((row.get("table_schema"),row.get("table_name")));
     }
 
-    // print!(format!("{}",db_url));
-    // let conn = Connection::connect(&db_url, TlsMode::None)
-            // .unwrap();
-    // conn.execute
+    let hypertable_query = "select * from timescaledb_information.hypertable;";
+    let mut hypertables:Vec<(String, String, i32, String)> = Vec::new();
+    for row in &conn.query(hypertable_query, &[]).unwrap() {
+        hypertables.push((row.get("table_schema"),row.get("table_name"),row.get("num_chunks"),row.get("total_size")))
+    }
+
 
     rocket::ignite()
         // .attach(PostgresDB::fairing())
