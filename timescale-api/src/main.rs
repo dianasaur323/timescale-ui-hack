@@ -4,10 +4,19 @@
 extern crate dotenv;
 extern crate postgres;
 
+extern crate rocket_cors;
+
 use postgres::{Connection, TlsMode};
 use std::env;
 // use rocket::response::content;
 use serde::{Serialize, Deserialize};
+
+use rocket::http::Method; // 1.
+
+use rocket_cors::{
+    AllowedHeaders, AllowedOrigins, Error, // 2.
+    Cors, CorsOptions // 3.
+};
 
 // #[database("postgres_db")]
 // struct PostgresDB(diesel::PgConnection);
@@ -97,6 +106,32 @@ fn hypertable(hypertable_name: String) -> String{
     return serde_json::to_string(&chunks).unwrap()
 }
 
+fn make_cors() -> Cors {
+    // let allowed_origins = AllowedOrigins::some_exact(&[ // 4.
+    //     "http://localhost:8080",
+    //     "http://127.0.0.1:8080",
+    //     "http://localhost:8000",
+    //     "http://0.0.0.0:8000",
+    //     AccessControlAllowOrigin::Null,
+    // ]);
+
+    let allowed_origins = AllowedOrigins::all();
+
+    CorsOptions { // 5.
+        allowed_origins,
+        allowed_methods: vec![Method::Get].into_iter().map(From::from).collect(), // 1.
+        allowed_headers: AllowedHeaders::some(&[
+            "Authorization",
+            "Accept",
+            "Access-Control-Allow-Origin", // 6.
+        ]),
+        allow_credentials: true,
+        ..Default::default()
+    }
+    .to_cors()
+    .expect("error while building CORS")
+}
+
 fn main() {
     // Pull in defined database url from .env file
 
@@ -108,7 +143,7 @@ fn main() {
 
 
     rocket::ignite()
-        // .attach(PostgresDB::fairing())
+        .attach(make_cors())
         .mount("/", routes![index])
         .mount("/hypertable", routes![hypertable])
         // .mount("/hello", routes![hello])
