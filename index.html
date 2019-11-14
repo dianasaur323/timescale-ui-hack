@@ -55,6 +55,7 @@
       var request = new XMLHttpRequest();
       var data;
 
+      // populate with all tables
       request.open('GET', 'http://localhost:8000/all_tables', true)
       request.onload = function() {
         // Begin accessing JSON data here
@@ -62,20 +63,10 @@
 
         if (request.status >= 200 && request.status < 400) {
           tabulate(data, ['table_schema', 'table_name']);
-          // console.log(data)
-          // data.forEach(table => {
-          //   table.table_schema
-          // })
-        //   data.forEach(movie => {
-        //     console.log(movie.title)
-        //   })
-        // } else {
-        //   console.log('error')
         }
       }
       request.send();
-      // render the table(s)
-      // tabulate(data, ['table_schema', 'table_name']); // 2 column table
+      
     </script>
   </body>
 </div>

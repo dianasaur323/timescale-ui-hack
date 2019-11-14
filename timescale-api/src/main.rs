@@ -29,7 +29,7 @@ use rocket_cors::{
 #[derive(Serialize, Deserialize, Debug)]
 struct Table {
     table_schema: String,
-    table_name: String
+    table_name: String,
 }
 
 #[derive(Serialize, Deserialize, Debug)]
@@ -51,6 +51,11 @@ fn index(query_type: String) -> String{
 
     let conn = Connection::connect(db_url, TlsMode::None)
             .unwrap();
+
+// select t1.table_schema, t1.table_name,
+// select * from information_schema.tables as t1
+// LEFT OUTER JOIN timescaledb_information.hypertable as t2 on t1.table_schema = t2.table_schema and t1.table_name = t2.table_schema
+// where t1.table_schema not in ('pg_catalog','_timescaledb_catalog','_timescaledb_config','_timescaledb_internal','_timescaledb_cache','information_schema','timescaledb_information');
 
     let query = match query_type.as_ref() {
         "all_tables" => "select * from information_schema.tables where table_schema
@@ -134,13 +139,6 @@ fn make_cors() -> Cors {
 
 fn main() {
     // Pull in defined database url from .env file
-
-    // let hypertable_query = "select * from timescaledb_information.hypertable;";
-    // let mut hypertables:Vec<(String, String, i32, String)> = Vec::new();
-    // for row in &conn.query(hypertable_query, &[]).unwrap() {
-    //     hypertables.push((row.get("table_schema"),row.get("table_name"),row.get("num_chunks"),row.get("total_size")))
-    // }
-
 
     rocket::ignite()
         .attach(make_cors())
